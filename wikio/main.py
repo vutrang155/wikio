@@ -12,7 +12,7 @@ def run() :
         import argparse
 
 
-        parser = argparse.ArgumentParser(prog='wiki', description='The program allows users to use Wikipedia through terminal screen using MediaWiki action API.\n'
+        parser = argparse.ArgumentParser(prog='wikio', description='The program allows users to use Wikipedia through terminal screen using MediaWiki action API.\n'
                                                                   'The program is divided into two mode, find and get. In the get mode, the value in arguments'
                                                                   ' must\nbe passed by wiki\'s id, which is shown in find mode. Usage of the application can be indicated\n'
                                                                   'in the example below :\n\n'
@@ -55,3 +55,6 @@ def run() :
         import logging
         logger = logging.Logger('catch_all')
         logger.error('Error :  ' + str(e))
+
+if __name__ == "__main__" :
+    run()

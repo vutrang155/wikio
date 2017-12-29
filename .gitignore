@@ -1,0 +1,5 @@
+#
+__pycache__/
+*.py[cod]
+wiki.egg-info/
+wikio.egg-info/

@@ -9,7 +9,7 @@ from shutil import rmtree
 
 from setuptools import find_packages, setup, Command
 
-NAME = 'wiki'
+NAME = 'wikio'
 DESCRIPTION = 'The program allows users to use Wikipedia through terminal screen using MediaWiki action API.'
 URL = ''
 EMAIL = 'tranghoangphongvu@gmail.com'
@@ -29,5 +29,7 @@ setup (
     packages=find_packages(),
     install_requires=REQUIRED,
     include_package_data=True,
-    scripts=['bin/wikio'],
+    entry_points = {
+        'console_scripts': ['wikio = wikio.main:run'],
+    },
 )
