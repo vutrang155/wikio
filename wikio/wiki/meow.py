@@ -29,7 +29,7 @@ def reindent(s, numSpaces):
     s = s.split('\n')
     try :
         s = [(numSpaces * ' ') + str.lstrip(line) for line in s]
-    except (TypeError)
+    except (TypeError) :
         s = [(numSpaces * ' ') + unicode.lstrip(line) for line in s]
     s = '\n'.join(s)
     return s
