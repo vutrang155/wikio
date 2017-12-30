@@ -27,6 +27,9 @@ def is_number(s):
 def reindent(s, numSpaces):
 
     s = s.split('\n')
-    s = [(numSpaces * ' ') + str.lstrip(line) for line in s]
+    try :
+        s = [(numSpaces * ' ') + str.lstrip(line) for line in s]
+    except (TypeError)
+        s = [(numSpaces * ' ') + unicode.lstrip(line) for line in s]
     s = '\n'.join(s)
     return s
