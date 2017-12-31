@@ -52,9 +52,7 @@ def run() :
                 raise ErrorException("Invalid value, The value must be a number")
 
     except ErrorException as e:
-        import logging
-        logger = logging.Logger('catch_all')
-        logger.error('Error :  ' + str(e))
+        print(str(e))
 
 if __name__ == "__main__" :
     run()
